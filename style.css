@@ -99,7 +99,7 @@
 
 .show {
     padding-right: 15px;
-    /*position: absolute;*/
+    position: absolute;
     right: 13px;
     font-size: 13px;
     font-weight: 700;
