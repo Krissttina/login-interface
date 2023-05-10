@@ -11,9 +11,15 @@
     <title>LogIn interface</title>
   </head>
   <body>
-    <div class="bg-img">
+    <section class="container">
+        <!--nav bar options-->
+        <section class="navBar">
+            <button class="logBtn">Log In</button>
+            <button class="registerBtn">Register</button>
+        </section>
+        <!--log In form-->
         <div class="content">
-            <header>Login</header>
+            <h2>Login</h2>
                 <form action="#">
                     <div class="field">
                         <span class="fa-solid fa-user"></span>
@@ -25,14 +31,14 @@
                         <span class="show">SHOW</span>
                     </div>
                     <div class="pass">
-                        <a href="#">Forgot Password?</a>
+                        <a href="#" class="forgot">Forgot Password?</a>
                     </div>
-                    <div class="login">
-                        <input type="submit" value="LOGIN" />
-                    </div>
+                    
+                        <button class="logInBtn">Log In</button>
+                    
                 </form>
         </div>
-    </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

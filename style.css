@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
-.bg-img {
+body{
+    font-family: "Montserra", sans-serif;
+}
+
+.container{
     background: url(https://c.wallhere.com/photos/26/17/1920x1080_px_Akame_Ga_Kill_anime_Anime_Girls_Esdeath_ice-797646.jpg!d);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
-.bg-img:after {
+.container:after{
     position: absolute;
     content: "";
     top: 0;
@@ -20,6 +23,38 @@
     height: 100%;
     width: 100%;
     background: rgb(255, 255, 255, 0.174);
+}
+
+.navBar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.registerBtn{
+    background: rgba(255, 255, 255, 0.651);
+    padding: 6px 5px;
+    margin: 12px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.registerBtn:hover{
+    background: rgba(255, 255, 255, 0.842);
+}
+
+.logBtn{
+    padding: 6px 5px;
+    margin: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: none;
+}
+
+.logBtn:hover{
+    margin: 32px;
+    background: rgba(255, 255, 255, 0.842);
 }
 
 .content {
@@ -39,12 +74,15 @@
     box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
 }
 
-.content header {
-    color: #fff;
+.content h2{
     font-size: 33px;
     font-weight: 600;
     margin: 0 0 35px 0;
-    font-family: "Montserra", sans-serif;
+}
+
+.forgot{
+    font-size: 13px;
+    color: white;
 }
 
 .field {
@@ -60,15 +98,16 @@
     line-height: 45px;
 }
 
-.field input { 
-    height: 100%;
+input { 
+    height: 70%;
     width: 100%;
     background: transparent;
     border: 1px solid rgb(83, 83, 83);
     outline: none;
     /*color: #fff;*/
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 .space {
@@ -85,18 +124,6 @@
     line-height: 45px;
 }
 
-
-.space input{
-    height: 100%;
-    width: 100%;
-    background: transparent;
-    border: 1px solid rgb(83, 83, 83);
-    outline: none;
-    /*color: #fff;*/
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-}
-
 .show {
     padding-right: 15px;
     position: absolute;
@@ -106,11 +133,6 @@
     color: #222;
     display: none;
     cursor: pointer;
-    font-family: "Montserra", sans-serif;
-}
-
-.pass-key:valid ~ .show {
-    display: block;
 }
 
 .pass {
@@ -121,35 +143,27 @@
 .pass a {
     color: white;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
 }
 
-.pass:hover a {
+.pass:hover a{
     text-decoration: underline;
 }
 
-
-.login {
-    color: white;
-    margin: 20px 0;
-    font-family: "Poppins", sans-serif;
-}
-
-.login input{
+.logInBtn{
     margin-left: 8px;
     letter-spacing: 1px;
     height: 40px;
     width: 70px;
     border: none;
     font-size: 16px;
-    font-weight: "Poppins", sans-serif;
     background: #509cb3;
     color: white;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.login input:hover{
+.logInBtn:hover{
     background: #345b8ff5;
 }
 
